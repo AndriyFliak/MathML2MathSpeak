@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<title>MathML MathJax Test Page</title>
+	<style type="text/css">
+		p { 
+			margin-left:10px;
+		}
+	</style>
+<style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuTitle {background-color: #CCCCCC; margin: -1px -1px 1px -1px; text-align: center; font-style: italic; font-size: 80%; color: #444444; padding: 2px 0; overflow: hidden}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">DIV.MathJax_MathML {text-align: center; margin: .75em 0px}
+.MathJax_mmlExBox {display: block; overflow: hidden; height: 1px; width: 60ex; padding: 0; border: 0; margin: 0}
+[mathvariant="double-struck"] {font-family: MathJax_AMS, MathJax_AMS-WEB}
+[mathvariant="script"] {font-family: MathJax_Script, MathJax_Script-WEB}
+[mathvariant="fraktur"] {font-family: MathJax_Fraktur, MathJax_Fraktur-WEB}
+[mathvariant="bold-script"] {font-family: MathJax_Script, MathJax_Caligraphic-WEB; font-weight: bold}
+[mathvariant="bold-fraktur"] {font-family: MathJax_Fraktur, MathJax_Fraktur-WEB; font-weight: bold}
+[mathvariant="monospace"] {font-family: monospace}
+[mathvariant="sans-serif"] {font-family: sans-serif}
+[mathvariant="bold-sans-serif"] {font-family: sans-serif; font-weight: bold}
+[mathvariant="sans-serif-italic"] {font-family: sans-serif; font-style: italic}
+[mathvariant="sans-serif-bold-italic"] {font-family: sans-serif; font-style: italic; font-weight: bold}
+[class="MJX-tex-oldstyle"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB}
+[class="MJX-tex-oldstyle-bold"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB; font-weight: bold}
+[class="MJX-tex-caligraphic"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB}
+[class="MJX-tex-caligraphic-bold"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB; font-weight: bold}
+@font-face /*1*/ {font-family: MathJax_AMS-WEB; src: url('file:///C:/Users/Vader/Desktop/mathjax/unpackedlanguagebuffer/../fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf')}
+@font-face /*2*/ {font-family: MathJax_Script-WEB; src: url('file:///C:/Users/Vader/Desktop/mathjax/unpackedlanguagebuffer/../fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf')}
+@font-face /*3*/ {font-family: MathJax_Fraktur-WEB; src: url('file:///C:/Users/Vader/Desktop/mathjax/unpackedlanguagebuffer/../fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf')}
+@font-face /*4*/ {font-family: MathJax_Caligraphic-WEB; src: url('file:///C:/Users/Vader/Desktop/mathjax/unpackedlanguagebuffer/../fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf')}
+@font-face /*5*/ {font-family: MathJax_Fraktur-WEB; font-weight: bold; src: url('file:///C:/Users/Vader/Desktop/mathjax/unpackedlanguagebuffer/../fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf')}
+@font-face /*6*/ {font-family: MathJax_Caligraphic-WEB; font-weight: bold; src: url('file:///C:/Users/Vader/Desktop/mathjax/unpackedlanguagebuffer/../fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf')}
+</style></head>
+<body><div style="display: none;" id="MathJax_Message"></div>
+	<h2>Numbers</h2>
+	<table>
+		<tbody><tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-1-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 81px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#928;</mi><mo>&#8776;</mo><mn>3.14159</mn></mrow></math></span></span></span><script id="MathJax-Element-1" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mi _moz-math-font-style="italic">&#928;</mi>
+					<mo>&#8776;</mo>
+					<mn>3.14159</mn>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms1"><p>Upper Pi almost-equals 3.14159 </p></td>
+		</tr>
+		<tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-2-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 46px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3.23E5</mn></mrow></math></span></span></span><script id="MathJax-Element-2" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mn>3.23E5</mn>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms2"><p>Num 3 point 2 3 E 5 </p></td>
+		</tr>
+		<tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-3-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 33px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>x</mo><mn>5</mn></mrow></math></span></span></span><script id="MathJax-Element-3" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mn>3</mn>
+					<mo>x</mo>
+					<mn>5</mn>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms3"><p>3 Times 5 </p></td>
+		</tr>
+		<tr>
+			<td>
+				<!-- 3x + 5 -->
+				<span style="font-size: 95%;" id="MathJax-Element-4-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 39px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow></math></span></span></span><script id="MathJax-Element-4" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mn>3</mn>
+					<mi _moz-math-font-style="italic">x</mi>
+					<mo>+</mo>
+					<mn>5</mn>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms4"><p>3 x Plus 5 </p></td>
+		</tr>
+		<tr>
+			<td>
+				<!-- 3 - -5 -->
+				<span style="font-size: 95%;" id="MathJax-Element-5-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 47px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mo>-</mo><mo>-</mo><mn>5</mn></mrow></math></span></span></span><script id="MathJax-Element-5" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mn>3</mn>
+					<mo>-</mo>
+					<mo>-</mo>
+					<mn>5</mn>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms5"><p>3 Minus Negative 5 </p></td>
+		</tr>
+		<tr>
+			<td>
+				<!-- -5 -->
+				<span style="font-size: 95%;" id="MathJax-Element-6-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 18px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>-</mo><mn>5</mn></mrow></math></span></span></span><script id="MathJax-Element-6" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mo>-</mo>
+					<mn>5</mn>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms6"><p>Negative 5 </p></td>
+		</tr>
+		<tr>
+			<td>
+				<!-- hex #FF0000 -->
+				<span style="font-size: 95%;" id="MathJax-Element-7-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 59px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>#FF0000</mn></mrow></math></span></span></span><script id="MathJax-Element-7" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mn>#FF0000</mn>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms7"><p>Num num-sign F F 0 0 0 0 </p></td>
+		</tr>
+		<tr>
+			<td>
+				<!-- XVII -->
+				<span style="font-size: 95%;" id="MathJax-Element-8-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 28px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>XVII</mn></mrow></math></span></span></span><script id="MathJax-Element-8" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mn>XVII</mn>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms8"><p>Num UpperWord X V I I </p></td>
+		</tr>
+		<tr>
+			<td>
+				<!-- 1 + ... + n -->
+				<span style="font-size: 95%;" id="MathJax-Element-9-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 56px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mn>1</mn><mo>+</mo><mi>...</mi><mo>+</mo><mi>n</mi></mrow></mrow></math></span></span></span><script id="MathJax-Element-9" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+						<mn> 1 </mn>
+						<mo> + </mo>
+						<mi _moz-math-font-style="normal"> ... </mi>
+						<mo> + </mo>
+						<mi _moz-math-font-style="italic"> n </mi>
+					</mrow>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms9"><p>1 Plus Ellipses Plus n </p></td>
+		</tr>
+		<!-- X = 5 -->
+		<!--
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mi>X</mi>
+			<mo>=</mo>
+			<mn>5</mn>
+		</math> <br /> -->
+	</tbody></table>
+	
+	<h2>Capitalization and Font Styles</h2>
+	<table>
+		<tbody><tr>
+			<td>
+				<!-- distance formula; UGH!! I broke it. This is frustrating. -->
+				<span style="font-size: 95%;" id="MathJax-Element-10-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 156px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><msup><mrow><mo>(</mo><mi>X</mi><mo>-</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mrow><mo>-</mo></mrow><msup><mrow><mo>(</mo><mi>Y</mi><mo>-</mo><mi>y</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow></mrow></math></span></span></span><script id="MathJax-Element-10" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+						<mi _moz-math-font-style="italic">d</mi>
+						<mo>=</mo>
+						<msqrt>
+							<mrow>
+								<msup>
+									<mrow>
+										<mo>(</mo>
+										<mi _moz-math-font-style="italic">X</mi>
+										<mo>-</mo>
+										<mi _moz-math-font-style="italic">x</mi>
+										<mo>)</mo>
+									</mrow>
+									<mn>2</mn>
+								</msup>
+								<mrow>
+									<mo>-</mo>
+								</mrow>
+								<msup>
+									<mrow>
+										<mo>(</mo>
+										<mi _moz-math-font-style="italic">Y</mi>
+										<mo>-</mo>
+										<mi _moz-math-font-style="italic">y</mi>
+										<mo>)</mo>
+									</mrow>
+									<mn>2</mn>
+								</msup>
+							</mrow>
+						</msqrt>
+					</mrow>
+				</math></script> 
+			</td>
+			<td class="mathspeak" id="ms10"><p>d Equals StartRoot left-p'ren Upper X Minus x Squared Negative  left-p'ren Upper Y Minus y Squared EndRoot </p></td>
+		</tr>
+		<!--<tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-11-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 186px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>If</mtext><mi>A</mi><mo>&#8594;</mo><mi>B</mi><mtext>and</mtext><mi>B</mi><mo>&#8594;</mo><mi>C</mi><mtext>then</mtext><mi>A</mi><mo>&#8594;</mo><mi>C</mi><mtext>.</mtext></mrow></math></span></span></span><script id="MathJax-Element-11" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mtext>If </mtext>
+					<mi _moz-math-font-style="italic">A</mi>
+					<mo>&#8594;</mo>
+					<mi _moz-math-font-style="italic">B</mi>
+					<mtext> and </mtext>
+					<mi _moz-math-font-style="italic">B</mi>
+					<mo>&#8594;</mo>
+					<mi _moz-math-font-style="italic">C</mi>
+					<mtext> then </mtext>
+					<mi _moz-math-font-style="italic">A</mi>
+					<mo>&#8594;</mo>
+					<mi _moz-math-font-style="italic">C</mi>
+					<mtext>.</mtext>			
+				</math></script> 
+			</td>
+			<td class="mathspeak" id="ms11"><p>If Upper A RightArrow Upper B and Upper B RightArrow Upper C then Upper A RightArrow Upper C . </p></td>
+		</tr>-->
+	</tbody></table>
+	
+	<h2>Grouping Symbols</h2>
+	<table>
+		<tbody><tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-12-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 19px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>A</mi><mo>|</mo></mrow></math></span></span></span><script id="MathJax-Element-12" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mo>|</mo>
+					<mi _moz-math-font-style="italic">A</mi>
+					<mo>|</mo>
+				</math></script> 
+			</td>
+			<td class="mathspeak" id="ms12"><p>StartAbsoluteValue Upper A EndAbsoluteValue </p></td>
+		</tr>
+				<!--
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mo>[</mo>
+			<mi>A</mi>
+			<mo>]</mo>
+		</math> <br /> -->
+	</tbody></table>
+	
+	<h2>Fractions</h2>
+	<table>
+		<tbody><tr>
+			<td>
+				<!-- 8/10 -->
+				<span style="font-size: 95%;" id="MathJax-Element-13-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 14px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>8</mn><mn>10</mn></mfrac></mrow></math></span></span></span><script id="MathJax-Element-13" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mfrac>
+						<mn>8</mn>
+						<mn>10</mn>
+					</mfrac>
+				</math></script><br>
+			</td>
+			<td class="mathspeak" id="ms13"><p>eight tenths </p></td>
+		</tr>
+		<tr>
+			<td>
+				<!-- 7/56 -->
+				<span style="font-size: 95%;" id="MathJax-Element-14-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 14px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>7</mn><mn>56</mn></mfrac></mrow></math></span></span></span><script id="MathJax-Element-14" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mfrac>
+						<mn>7</mn>
+						<mn>56</mn>
+					</mfrac>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms14"><p>seven fifty-sixths </p></td>
+		</tr>
+		<tr>
+			<td>
+				<!-- 22/7 = 3.142857 (repeat) -->
+				<span style="font-size: 95%;" id="MathJax-Element-15-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 142px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mfrac><mn>22</mn><mn>7</mn></mfrac><mo>=</mo><mn>3.</mn><munder><mn>142857</mn></munder></mrow></mrow></math></span></span></span><script id="MathJax-Element-15" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+						<mfrac>
+							<mn>22</mn>
+							<mn>7</mn>
+						</mfrac>
+						<mo>=</mo>
+						<mn>3.</mn>
+						<mover>
+							<mn>142857</mn>
+						</mover>
+					</mrow>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms15"><p>StartFraction 22 Over 7 EndFraction Equals Num 3 point Overscript 142857 EndScripts </p></td>
+		</tr>
+		<tr>
+			<td>
+				<!-- x ^ (3/2) -->
+				<span style="font-size: 95%;" id="MathJax-Element-16-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 17px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>x</mi><mfrac><mn>3</mn><mn>2</mn></mfrac></msup></mrow></math></span></span></span><script id="MathJax-Element-16" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<msup>
+						<mi _moz-math-font-style="italic">x</mi>
+						<mfrac>
+							<mn>3</mn>
+							<mn>2</mn>
+						</mfrac>
+					</msup>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms16"><p>x Sup three halves Base </p></td>
+		</tr>
+		<!--
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mfrac><mn>1</mn><mn>2</mn></mfrac>
+			<mo>+</mo>
+			<mfrac><mn>2</mn><mn>2</mn></mfrac>
+			<mo>+</mo>
+			<mfrac><mn>3</mn><mn>2</mn></mfrac>
+			<mo>+</mo>
+			<mfrac><mn>4</mn><mn>2</mn></mfrac>
+			<mo>+</mo>
+			<mi>...</mi>
+			<mo>=</mo>
+			<munderover>
+				<mi>&Sigma;</mi>
+				<mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow>
+				<mi>&infin;</mi>
+			</munderover>
+			<mfrac><mi>n</mi><mn>2</mn></mfrac>
+		</math> <br /> -->
+	</tbody></table>
+	
+	<h2>Units</h2>
+	<table>
+		<tbody><tr>
+			<td>
+				<!-- 5 microliters -->
+				<span style="font-size: 95%;" id="MathJax-Element-17-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 21px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mtext>µl</mtext></mrow></math></span></span></span><script id="MathJax-Element-17" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mn>5</mn>
+					<mtext>µl</mtext>		
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms17"><p>5 microliter </p></td>
+		</tr>
+		<tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-18-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 124px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mn>1</mn><mtext>J</mtext></mrow><mo>=</mo><mrow><mn>1</mn><mtext>kg</mtext><mo>x</mo><msup><mtext>m</mtext><mn>2</mn></msup><mo>x</mo><msup><mtext>s</mtext><mn>-2</mn></msup></mrow></mrow></math></span></span></span><script id="MathJax-Element-18" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+						<mn>1</mn>
+						<mtext>J</mtext>
+					</mrow>
+					<mo>=</mo>
+					<mrow>
+						<mn>1</mn>
+						<mtext>kg</mtext>
+						<mo>x</mo>
+						<msup>
+							<mtext>m</mtext>
+							<mn>2</mn>
+						</msup>
+						<mo>x</mo>
+						<msup>
+							<mtext>s</mtext>
+							<mn>-2</mn>
+						</msup>
+					</mrow>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms18"><p>1 Joule Equals 1 kilogram Times  meter Squared Times second Sup Negative 2 Base </p></td>
+		</tr>
+	</tbody></table>
+	
+	<h2>Symbols</h2>
+	<table>
+		<tbody><!--<tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-19-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 311px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>Uppercase</mtext><mrow><mo>(</mo><mrow><mo>{</mo><mi>&#945;</mi><mi>,</mi><mi>&#946;</mi><mi>,</mi><mi>&#967;</mi><mi>,</mi><mi>&#948;</mi><mi>,</mi><mi>&#949;</mi><mi>,</mi><mi>&#966;</mi><mo>}</mo><mrow><mo>)</mo><mo>=</mo><mo>{</mo><mi>&#913;</mi><mi>,</mi><mi>&#914;</mi><mi>,</mi><mi>&#935;</mi><mi>,</mi><mi>&#916;</mi><mi>,</mi><mi>&#917;</mi><mi>,</mi><mi>&#934;</mi><mo>}</mo><mrow></mrow></mrow></mrow></mrow></mrow></math></span></span></span><script id="MathJax-Element-19" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mtext>Uppercase</mtext>
+					<mrow>
+						<mo>(</mo>
+							<mrow>
+								<mo>{</mo>
+									<mi _moz-math-font-style="italic">&#945;</mi><mi>,</mi>
+									<mi _moz-math-font-style="italic">&#946;</mi><mi>,</mi>
+									<mi _moz-math-font-style="italic">&#967;</mi><mi>,</mi>
+									<mi _moz-math-font-style="italic">&#948;</mi><mi>,</mi>
+									<mi _moz-math-font-style="italic">&#949;</mi><mi>,</mi>
+									<mi _moz-math-font-style="italic">&#966;</mi>
+								<mo>}</mo>
+							<mrow>
+						<mo>)</mo>
+						<mo>=</mo>
+						<mo>{</mo>
+							<mi _moz-math-font-style="italic">&#913;</mi><mi>,</mi>
+							<mi _moz-math-font-style="italic">&#914;</mi><mi>,</mi>
+							<mi _moz-math-font-style="italic">&#935;</mi><mi>,</mi>
+							<mi _moz-math-font-style="italic">&#916;</mi><mi>,</mi>
+							<mi _moz-math-font-style="italic">&#917;</mi><mi>,</mi>
+							<mi _moz-math-font-style="italic">&#934;</mi>
+						<mo>}</mo>
+					<mrow>
+				</mrow></mrow></mrow></mrow></math></script>
+			</td>
+			<td class="mathspeak" id="ms19"><p>Uppercase left-p'ren StartSet 
+Alpha comma Beta comma Chi comma Delta comma Epsilon comma Phi EndSet 
+Equals StartSet Upper Alpha comma Upper Beta comma Upper Chi comma Upper
+ Delta comma Upper Epsilon comma Upper Phi EndSet </p></td>
+		</tr>-->
+	</tbody></table>
+	
+	<h2>Superscripts, Subscripts, and Roots</h2>
+	<table>
+		<!-- <tr>
+			<td>
+				<math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mroot>
+						<mi>x</mi>
+						<mn>3</mn>
+					</mroot>
+				</math>
+			</td>
+			<td class="mathspeak" id="ms20"></td>
+		</tr> -->
+		<tbody><tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-20-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 15px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></math></span></span></span><script id="MathJax-Element-20" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<msup>
+						<mi _moz-math-font-style="italic">x</mi>
+						<mn>2</mn>
+					</msup>
+				</math></script> <br>
+			</td>
+			<td class="mathspeak" id="ms20"><p> x Squared </p></td>
+		</tr>
+		<tr>
+			<td>					
+				<span style="font-size: 95%;" id="MathJax-Element-21-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 15px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>x</mi><mn>3</mn></msup></mrow></math></span></span></span><script id="MathJax-Element-21" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<msup>
+						<mi _moz-math-font-style="italic">x</mi>
+						<mn>3</mn>
+					</msup>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms21"><p> x Cubed </p></td>
+		</tr>
+		<tr>
+			<td>					
+				<span style="font-size: 95%;" id="MathJax-Element-22-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 101px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mrow></math></span></span></span><script id="MathJax-Element-22" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mi _moz-math-font-style="italic">a</mi>
+					<msup>
+						<mi _moz-math-font-style="italic">x</mi>
+						<mn>2</mn>
+					</msup>
+					<mo>+</mo>
+					<mi _moz-math-font-style="italic">b</mi><mi _moz-math-font-style="italic">x</mi>
+					<mo>+</mo>
+					<mi _moz-math-font-style="italic">c</mi>
+					<mo>=</mo>
+					<mn>0</mn>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms22"><p>a  x Squared Plus b x Plus c Equals 0 </p></td>
+		</tr>
+		<tr>
+			<td>
+				<div style="font-size: 95%;" id="MathJax-Element-23-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 123px;"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>=</mo><mrow><mfrac><mrow><mo>&#8722;</mo><mi>b</mi><mo>±</mo><msqrt><msup><mi>b</mi><mn>2</mn></msup><mo>&#8722;</mo><mn>4</mn><mi>a</mi><mi>c</mi></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow></mrow></math></span></span></div><script id="MathJax-Element-23" type="math/mml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+					<mi _moz-math-font-style="italic">x</mi> <mo>=</mo>
+					<mrow>
+						<mfrac>
+						  <mrow>
+							<mo>&#8722;</mo>
+							<mi _moz-math-font-style="italic">b</mi>
+							<mo>±</mo>
+							<msqrt>
+							  <msup><mi _moz-math-font-style="italic">b</mi><mn>2</mn></msup>
+							  <mo>&#8722;</mo>
+							  <mn>4</mn><mi _moz-math-font-style="italic">a</mi><mi _moz-math-font-style="italic">c</mi>
+							</msqrt>
+						  </mrow>
+						  <mrow> <mn>2</mn><mi _moz-math-font-style="italic">a</mi> </mrow>
+						</mfrac>
+					</mrow>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms23"><p>x Equals StartFraction Minus b Plus-Minus StartRoot b Squared Minus 4 a c EndRoot Over 2 a EndFraction </p></td>
+		</tr>
+	</tbody></table>
+	
+	<!-- sin(theta) & f(x) -->
+	<h2>Functions</h2>
+	<table>
+		<tbody><tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-24-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 38px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math></span></span></span><script id="MathJax-Element-24" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+						<mi _moz-math-font-style="normal">sin</mi>
+						<mo> ( </mo>
+						<mi _moz-math-font-style="italic">x</mi> <!-- &#x398; -->
+						<mo> ) </mo>
+					</mrow>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms24"><p>sign of x </p></td> 
+		</tr>
+		<tr>
+			<td>
+				<span style="font-size: 95%;" id="MathJax-Element-25-Frame" class="MathJax_MathML"><span style="position: relative; display: inline-block; white-space: nowrap;" class="MathJax_MathContainer"><span style="display: inline-block; width: 28px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math></span></span></span><script id="MathJax-Element-25" type="math/mml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+						<mi _moz-math-font-style="italic">f</mi>
+						<mo> ( </mo>
+						<mi _moz-math-font-style="italic">x</mi>
+						<mo> ) </mo>
+					</mrow>
+				</math></script>
+			</td>
+			<td class="mathspeak" id="ms25"><p>f of x </p></td>
+		</tr>
+	</tbody></table>
+
+
+		
+
+		<!-- phi -->
+		<!--
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mi>&phi;</mi>
+			<mo>=</mo>
+			<mrow>
+				<mn>1</mn>
+				<mo>+</mo>
+				<mfrac>
+					<mn>1</mn>
+					<mrow>
+							<mn>1</mn>
+							<mo>+</mo>
+							<mfrac>
+								<mn>1</mn>
+								<mrow>
+									<mn>1</mn>
+									<mo>+</mo>
+									<mi>&#x22f1;</mi>
+								</mrow>
+							</mfrac>
+						</mrow>
+				</mfrac>
+			</mrow>
+		</math> <br /> -->
+		
+		<!-- (a/b) / c -->
+		<!-- <math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mfrac>
+				<mfrac>
+					<mi>a</mi>
+					<mi>b</mi>
+				</mfrac>
+				<mi>c</mi>
+			</mfrac>
+		</math> -->
+
+
+
+
+</body></html>
